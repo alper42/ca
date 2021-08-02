@@ -88,7 +88,7 @@ $(window).scroll(function(){
 jQuery(document).ready(function() {
     var width = $(window).width();
     if (width < 550) {
-        $('body').css('overflow-x', 'scroll');
-    } else {
         $('body').css('overflow-x', 'hidden');
+    } else {
+        $('body').css('overflow-x', 'scroll');
     }
