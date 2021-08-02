@@ -84,3 +84,11 @@ $(window).scroll(function(){
        $(".menu").removeClass("menuChange");
     }
 });
+
+jQuery(document).ready(function() {
+    var width = $(window).width();
+    if (width < 550) {
+        $('body').css('overflow-x', 'scroll');
+    } else {
+        $('body').css('overflow-x', 'hidden');
+    }
