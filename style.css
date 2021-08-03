@@ -4,8 +4,7 @@
 }
 body{
 
-    overflow: hidden; 
-    overflow-y: auto;
+    overflow-x: hidden; 
     cursor: context-menu;
     background: white;
     color: white;
@@ -32,6 +31,11 @@ body{
 }
 ::-webkit-scrollbar-track{
 
+    
+}
+.wrapper{
+
+    overflow-x:hidden;
     
 }
 .webentwicklung{
