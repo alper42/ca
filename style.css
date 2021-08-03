@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-html, body{
+body{
 
     overflow-x: hidden ;
     cursor: context-menu;
@@ -10,6 +10,13 @@ html, body{
     color: white;
     font-family:'Comfortaa', cursive;
     transition: 0.5s;
+
+    .wrapper{
+
+        position: relative;
+        overflow-x: hidden;
+
+    }
 }
 ::-webkit-scrollbar{
 
