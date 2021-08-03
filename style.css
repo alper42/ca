@@ -4,17 +4,14 @@
 }
 body{
 
-    overflow-x: hidden; 
+    overflow: hidden; 
+    overflow-y: auto;
     cursor: context-menu;
     background: white;
     color: white;
     font-family:'Comfortaa', cursive;
     transition: 0.5s;
 
-}
-html{
-
-    overflow-x: hidden; 
 }
 ::-webkit-scrollbar{
 
@@ -705,7 +702,6 @@ html{
         height: 300px;
         left: 20%;
         top: 25%;
-        overflow: hidden;
     }
     .logo img{
 
