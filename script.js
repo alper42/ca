@@ -84,3 +84,14 @@ $(window).scroll(function(){
        $(".menu").removeClass("menuChange");
     }
 });
+$(document).ready(function(){       
+    var scroll_pos = 0;
+    $(document).scroll(function() { 
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 1000) {
+            $("body").css('background-color', 'black');
+        } else {
+            $("body").css('background-color', 'white');
+        }
+    });
+});
