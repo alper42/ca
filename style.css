@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
 }
-html, body{
+body{
 
     overflow-x: hidden; 
     cursor: context-menu;
-    background: black;
+    background: white;
     color: white;
     font-family:'Comfortaa', cursive;
     transition: 0.5s;
 
+}
+html{
+
+    overflow-x: hidden; 
 }
 ::-webkit-scrollbar{
 
@@ -694,11 +698,6 @@ html, body{
 
 }
 @media only screen and (max-width:500px){
-
-    html, body{
-
-        overflow-x: hidden;
-    }
 
     .monitor img{
 
