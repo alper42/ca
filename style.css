@@ -695,11 +695,10 @@ body{
 }
 @media only screen and (max-width:500px){
 
-    body{
+    html, body{
 
-        position: relative;
-        overflow-x: hidden; !important;
-        
+        overflow-x: hidden; 
+
 
     }
 
