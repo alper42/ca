@@ -10,12 +10,11 @@ body{
     color: white;
     font-family:'Comfortaa', cursive;
     transition: 0.5s;
-
+    /*font-family: 'Megrim', cursive;*/
 }
 ::-webkit-scrollbar{
 
     width: 3px;
-    
 }
 ::-webkit-scrollbar-thumb{
     
@@ -33,17 +32,188 @@ body{
 
     
 }
-.wrapper{
+                              /*firstTop*/
+.spruch{
 
-    overflow-x:hidden;
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Maven Pro', sans-serif;
+    top: 39%;
+    left: 11%;
+    color: black;
+    font-weight: bold;
+}
+.spruch2{
+
+    position: absolute;
+    font-size: 55px;
+    font-family: 'Maven Pro', sans-serif;
+    top: 49%;
+    left: 13%;
+    color: black;
+    letter-spacing: -3px;
+}
+.slipper{
+
+    position: absolute;
+    font-size: 50px;
+    box-sizing: border-box;
+    font-family:'Comfortaa', cursive;
+    top: 50.3%;
+    left: 33%;
+    width: 450px;
+    height: 55px;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slipperText1{
+
+    animation: slip 6s ease-in-out infinite;
+    margin-bottom: 45px;
+
+}
+.slipperText2{
+
+    margin-bottom: 43px;
+
+}
+.slipperText3{
+
+    margin-bottom: 30px;
     
 }
+@keyframes slip{
+
+    0%{margin-top: -300px;}
+    5%{margin-top: -200px;}
+    33%{margin-top: -200px;}
+    38%{margin-top: -100px;}
+    66%{margin-top: -100px;}
+    71%{margin-top: 0;}
+    100%{margin-top: 0;}
+}
+.spruchOben{
+
+    position: absolute;
+    font-size: 20px;
+    font-family:'Comfortaa', cursive;
+    top: 13em;
+    left: 7.7em;
+    background: -webkit-linear-gradient(#00fff0, #00ff15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.erstellen a{
+
+    position: absolute;
+    width: 220px;
+    height: 40px;
+    background:-webkit-linear-gradient(transparent 50%, #00FFF0 50%);
+    background-size:200px 160px;
+    border-bottom: 1px solid #00FFF0;
+    top: 62%;
+    left: 20%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    color: black;;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.erstellen a:hover{
+
+    color: white;
+    background-position: 0 -80px;
+}
+.kasten{
+
+    position: absolute;
+    width: 50px;
+    height: 140px;
+    background: linear-gradient(360deg, #ffffff, #c7fffd, #00FFF0);
+    top: 40%;
+    left: 9%;
+
+}
+.bgcolor{
+    
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff, #00ffee5d);
+}
+.mouseStrich{
+
+    position: absolute;
+    width: 1px;
+    height: 130px;
+    background: #ffffff;
+    top: 66%;
+    left: 4.8%;
+    overflow: hidden;
+}
+.mouseStrichAni{
+
+    position: absolute;
+    width: 100%;
+    height: 450%;
+    background: #d4d4d4;
+    animation: mouseFrame 2.3s ease-out infinite;
+
+}
+@keyframes mouseFrame{
+
+    0%{
+        top: -500%;
+
+    }
+    100%{
+        top: 300%;
+        
+    }
+}
+.mouse img{
+
+    position: absolute;
+    width: 27px;
+    color: gray;
+    top: 87%;
+    left: 4%;
+}
+.web img{
+
+    position: absolute;
+    right: 5%;
+    top: 17%;
+    width: 700px;
+    
+}
+.schleifeAb{
+
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background: white;
+    top: 100%;
+}
+.schleife img{
+
+    position: absolute;
+    width: 1300px;
+    left: 10%;
+    top: -10px;
+}
+                              /*Introduce*/
 .webentwicklung{
 
     position: absolute;
     color: black;
     font-size: 40px;
-    top: 7%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
@@ -56,7 +226,7 @@ body{
 
     position: absolute;
     color: rgb(126, 126, 126);
-    top: 60%;
+    top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
@@ -65,98 +235,1431 @@ body{
 
 
 }
-.arrowKreis{
+                              /*blackScroll*/
+.responsive{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 0%;
+    top: 210%;
+    font-size: 80px;
+    transform: rotate(270deg);
+}
+.webdesign{
+
+    position: absolute;
+    background: -webkit-linear-gradient(90deg, #ffffff, #00FFF0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 0%;
+    top: 290%;
+    font-size: 80px;
+    transform: rotate(90deg);
+}
+.endgerät{
+
+    position: absolute;
+    background: -webkit-linear-gradient(90deg, #ffffff, #00FFF0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 50%;
+    top: 257%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    /*-webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px turquoise;
+    box-shadow:  0 0 100px 100px #93fff8b2;*/
+}
+.mac img{
+
+    position: absolute;
+    width: 480px;
+    height: 250px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 10em;
+    top: 200%;
+}
+
+.imac img{
+
+   
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 60%;
+    top: 200%;
+    transform: translate(-50%, -50%);
+
+
+}
+.iphone img{
+
+    position: absolute;
+    width: 930px;
+    height: 1000px;
+    top: -25%;
+    left: 50%;
+ 
+}
+.iphone2 img{
+
+    position: absolute;
+    width: 750px;
+    height: 850px;
+    top: 0;
+    left:47%;
+    
+
+}
+.handy img{
+
+    position: absolute;
+    top: 315%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 450px;
+    -webkit-box-reflect: below -37px linear-gradient(transparent, transparent, #0004);
+}
+.handy2 img{
+
+    position: absolute;
+    top: 310%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 520px;
+    -webkit-box-reflect: below -45px linear-gradient(transparent, transparent, #0004);
+
+    
+
+}
+                              /*Way to Website*/
+.kreisW{
+
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: white;
+    left: 50%;
+    top: 420%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+
+}
+.kreisWAni{
+
+    width: 2000px;
+    height: 2000px;
+}
+.weg{
+
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 0;
+}
+.zu{
+
+    position: absolute;
+    width: 335px;
+    height: 30px;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    transition: 0.5s
+}
+.zuAni{
+
+    top: 46%;
+}
+.webs{
+
+    position: absolute;
+    color: black;
+    top: 0;
+    right: 0;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bold;
+}
+.slider{
+
+    background: transparent;
+    top: 3450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 550px;
+    box-shadow: 5px 5px 20px 2px  rgb(230, 230, 230);
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.sliderAni{
+
+    opacity: 1;
+}
+
+.slider li{
+
+    background-color: transparent;
+    height: 550px;
+}
+.eins{
+
+    position: absolute;
+    font-size: 100px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 5px;
+    padding-left: 0.3%;
+}
+.strichE{
+
+    position: absolute;
+    width: 230px;
+    height: 1px;
+    background: -webkit-linear-gradient(87deg, #00fff0, #00fca8, #00fc15);
+    top: 16%;
+    margin-left: 4%;
+}
+.uberschrift1{
+
+    position: absolute;
+    color: black;
+    top: 30px;
+    padding-left: 160px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
+}
+.uberschrift2{
+
+    position: absolute;
+    color: black;
+    top: 57px;
+    padding-left: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
+}
+.uberschrift3{
+
+    position: absolute;
+    color: black;
+    top: 57px;
+    padding-left: 158px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+}
+.text1{
+
+    position: absolute;
+    top: 120px;
+    width: 300px;
+    padding-left: 50px;
+    color: rgb(126, 126, 126);
+    line-height: 23px;
+    
+}
+.beratung img{
+
+    position: absolute;
+    width: 250px;
+    height: 160px;
+    bottom: 3%;
+    margin-left: 75px;
+    border-radius: 10px;
+}
+.prev{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30%;
+    top: 3650px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgb(214, 214, 214);
+    cursor: pointer;
+}
+.arrowPrev1{
+
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+}
+.arrowPrev2{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+    top: 62%;
+    left: 30%;
+
+
+}
+.next{
 
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid white;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
+    left: 66.5%;
+    top: 3650px;
+    box-shadow: 1px 1px 10px rgb(214, 214, 214);
+    cursor: pointer;
+}
+.arrowNext1{
+
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+.arrowNext2{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 35%;
+
+
+}
+.slick-dots{
+
+    position: absolute;
+    display: flex;
+    top: 590px;
+    left: 30%;
+}
+.slick-dots li{
+
+    padding-right: 20px;
     
 }
-.arrowKreis:hover{
+.slick-dots li button{
 
-    background: rgba(255, 255, 255, 0.116);
+    width: 10px;
+    height: 7px;
+    border-radius: 50px;
+    background: white;
+    border: 1px solid rgba(3, 255, 108, 0.651);
+    text-indent: -9999px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 70px;
+}
+.rainbow{
+
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 500%;
+
+
+}
+                                /*FAQ*/
+.faq{
+
+    position: absolute;
+    bottom: -11.8%;
+    left: 30%;
+    font-size: 250px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    -webkit-box-reflect: below -115px linear-gradient(transparent, transparent, #0004);
+}
+.faqBorder{
+
+    position: absolute;
+    top: 580%;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(45deg, #00fff0, #00fc15) 1;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.075));
+    background: linear-gradient(0deg, #00fca8, #00fca880, #00fca83d, #00fca810, transparent, transparent, transparent, transparent, transparent);
+}
+.gestellteF{
+
+    position:absolute;
+    top: 605%;
+    right: 14.5%;
+    font-size: 30px;
+
+}
+.fragen{
+
+    position: absolute;
+    top: 600%;
+    width: 100px;
+}
+.fawQ{
+
+    position: absolute;
+    width: 440px;
+    height: 800px;
+    background: transparent;
+    top: 620%;
+    right: 10%;
+
+}
+.faw{
+
+    position: relative;
+    width: 440px;
+    height: 60px;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.fawAni{
+
+    height: 200px;
+}
+.fawZ{
+
+    position: relative;
+    width: 440px;
+    height: 30px;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.fawZAni{
+
+    height: 180px;
+}
+.fawD{
+
+    position: relative;
+    width: 440px;
+    height: 60px;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    line-height: 1.3;
+
+}
+.fawDAni{
+
+    height: 180px;
+}
+.fawV{
+
+    position: relative;
+    width: 440px;
+    height: 60px;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.fawVAni{
+
+    height: 150px;
+}
+.fawF{
+
+    position: relative;
+    width: 440px;
+    height: 60px;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.fawFAni{
+
+    height: 180px;
+}
+.fawS{
+
+    position: relative;
+    width: 440px;
+    height: 60px;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.fawSAni{
+
+    height: 260px;
+}
+.questions p{
+
+    padding-left: 40px;
+}
+.questionsZ p{
+
+    padding-left: 40px;
+}
+.questionsD p{
+
+    padding-left: 40px;
+}
+.questionsV p{
+
+    padding-left: 40px;
+}
+.questionsF p{
+
+    padding-left: 40px;
+}
+.questionsS p{
+
+    padding-left: 40px;
+}
+.questions{
+
+    font-size: 23px;
+    cursor: pointer;
+}
+.questionsZ{
+
+    font-size: 23px;
+    cursor: pointer;
+}
+.questionsD{
+
+    font-size: 23px;
+    cursor: pointer;
+}
+.questionsV{
+
+    font-size: 23px;
+    cursor: pointer;
+}
+.questionsF{
+
+    font-size: 23px;
+    cursor: pointer;
+}
+.questionsS{
+
+    font-size: 23px;
+    cursor: pointer;
+}
+.questionsColor{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.answer{
+
+    position: absolute;
+    top: 70px;
+    line-height: 1.5;
+}
+.answerZ{
+
+    position: absolute;
+    top: 40px;
+    line-height: 1.5;
+}
+.answerD{
+
+    position: absolute;
+    top: 70px;
+    line-height: 1.5;
+}
+.answerV{
+
+    position: absolute;
+    top: 70px;
+    line-height: 1.5;
+}
+.answerF{
+
+    position: absolute;
+    top: 70px;
+    line-height: 1.5;
+}
+.answerS{
+
+    position: absolute;
+    top: 70px;
+    line-height: 1.5;
+}
+.faqStrich{
+
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    bottom: 0;
+    transition: 0.5s;
+}
+.faqStrichZ{
+
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    bottom: 0;
+    transition: 0.5s;
+}
+.faqStrichD{
+
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    bottom: 0;
+    transition: 0.5s;
+}
+.faqStrichV{
+
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    bottom: 0;
+    transition: 0.5s;
+}
+.faqStrichF{
+
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    bottom: 0;
+    transition: 0.5s;
+}
+.faqStrichS{
+
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    bottom: 0;
+    transition: 0.5s;
+}
+.faqStrichAni{
+
+    width: 100%;
+   
 }
 .arrow{
 
     position: absolute;
-    width: 17px;
-    height: 17px;
-    border-right: 1px solid white ;
-    border-bottom: 1px solid white ;
-    transform: rotate(45deg);
-    top: 23%;
-    left: 33%;
-    transition: 0.2s;
-    
+    top: -8px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    transition: 0.4s;
+    cursor: pointer;
 }
 .arrowAni{
 
-    top: 35%;
+    transform: rotate(-90deg);
+    top: -5px;
+
 }
-#kreisRunter{
+.arrowStrich1{
 
     position: absolute;
-    top: 100%;
-    width: 1px;
-    height: 1px;
+    top: 35%;
+    left: 40%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
 }
+.arrowStrich2{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 40%;
+    
+
+
+}
+.arrowZ{
+
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.arrowZAni{
+
+    transform: rotate(-90deg);
+    top: -5px;
+
+}
+.arrowStrich3{
+
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+.arrowStrich4{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 40%;
+
+
+}
+.arrowD{
+
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.arrowDAni{
+
+    transform: rotate(-90deg);
+    top: -5px;
+
+}
+.arrowStrich5{
+
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+.arrowStrich6{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 40%;
+
+
+}
+.arrowV{
+
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.arrowVAni{
+
+    transform: rotate(-90deg);
+    top: -5px;
+
+}
+.arrowStrich7{
+
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+.arrowStrich8{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 40%;
+
+
+}
+.arrowF{
+
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.arrowFAni{
+
+    transform: rotate(-90deg);
+    top: -5px;
+
+}
+.arrowStrich9{
+
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+.arrowStrich10{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 40%;
+
+
+}
+.arrowS{
+
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.arrowSAni{
+
+    transform: rotate(-90deg);
+    top: -5px;
+
+}
+.arrowStrich11{
+
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+}
+.arrowStrich12{
+
+    position: absolute;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 16px;
+    height: 1.5px;
+    border-radius: 15px;
+    transform: rotate(135deg);
+    top: 62%;
+    left: 40%;
+
+
+}
+                              /*Project Box*/
+.seiteErstellenBox{
+
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 750%;
+    text-align: center;
+}
+.schleife2 img{
+
+    position: absolute;
+    width: 1000px;
+    left: 40%;
+    top: -2px;
+}
+.anfordern1{
+
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    font-family: 'Work Sans', sans-serif;
+}
+.anfordern2{
+
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+.anfordern3 a{
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.anfordernStrich{
+
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    background: rgb(226, 226, 226);
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.anfordernStrichZ{
+
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+.anfordernStrichZAni{
+
+    width: 240px;
+}
+                              /*Footer*/
+.footer{
+
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: black;
+    top: 825%;
+}
+.footerResp{
+
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    background: black;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: rgb(112, 112, 112);
+}
+.footerLogo img{
+
+    position: absolute;
+    width: 60px;
+
+    
+}
+.footerLogo1{
+
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    font-size: 28px;
+    font-family: 'Aclonica', sans-serif;
+    color: #ffffff;
+
+}
+.footerLogo2{
+
+    position: absolute;
+    top: 6px;
+    left: 122px;
+    font-family: 'Poiret One', cursive;
+    font-size: 28px;
+    transition: 1s;
+    color: #ffffff;
+}
+.textCali{
+
+    position: absolute;
+    width: 240px;
+    top: 80px;
+    left: 5px;
+    line-height: 1.4;
+}
+.footerKontakt{
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+}
+.footerTel{
+
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+}
+.telIconFooter{
+
+    position: absolute;
+    top: 29.5%;
+    left: 33%;
+    transition: 1s;
+
+}
+.telIconFooter:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.footerMail{
+
+    position: absolute;
+    top: 43%;
+    left: 35%;
+}
+
+.mailIconFooter{
+
+    position: absolute;
+    top: 43%;
+    left: 33%;
+
+}
+.mailIconFooter:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.footerAdress{
+
+    position: absolute;
+    top: 28%;
+    right: 30%;
+    width: 200px;
+    line-height: 1.7;
+}
+.footerInsta{
+
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    top: 5%;
+    color: #ffffff;
+}
+.footerInsta:hover{
+
+    background: -webkit-linear-gradient(250deg, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.footerLinkedIn{
+
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+    top: 3.5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    text-align: center;
+    line-height: 1.4444;
+    color: #ffffff;
+}
+.footerLinkedIn:hover{
+
+    background: #005481;
+    
+}
+.footerTwitter{
+
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    top: 5%;
+    color: #ffffff;
+}
+.footerTwitter:hover{
+
+    background:  #1DA1F2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.impressum{
+
+    position: absolute;
+    top: 30%;
+    right: 0;
+    font-size: 13px;
+}
+.impressum:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.datenschutz{
+
+    position: absolute;
+    top: 40%;
+    right: 0;
+    font-size: 13px;
+}
+.datenschutz:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.agb{
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 13px;
+
+}
+.agb:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copyright{
+
+    position: absolute;
+    top: 70%;
+    right: 0;
+    font-size: 15px;
+
+}
+.copyrightJ{
+
+    position: absolute;
+    top: 69.5%;
+    right: 8.5%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;;
+
+}
+.copyrightLogo{
+
+    position: absolute;
+    top: 70%;
+    right: 11.5%;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;;
+
+}
+.FooterArrowAusen{
+
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+
+}
+.FooterArrowInnen1{
+
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    width: 30px;
+    height: 1px;
+    transform: rotate(45deg);
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+.FooterArrowInnen2{
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 30px;
+    height: 1px;
+    transform: rotate(135deg);
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+#oben{
+
+    position: absolute;
+    width: 1px;
+    top: 0;
+}
+                              /*Important Mail*/
+.important{
+
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(#00fff0, #00fc15);
+    border-radius: 50%;
+    bottom: 10%;
+    right: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.importantAni{
+
+    width: 230px;
+    height: 190px;
+    border-radius: 10px;
+    
+}
+.mail{
+
+    position: absolute;
+    font-size: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s
+}
+.mailAni{
+
+    display: none;
+}
+.importantText{
+
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Comfortaa', cursive;
+}
+.importantTextAni{
+
+    display: block
+}
+.telefonImp{
+
+    position: absolute;
+    top: 24%;
+    left: 17%;
+    font-weight: bold;
+
+}
+.telIcon{
+
+    position: absolute;
+    font-size: 20px;
+    top: 22%;
+}
+.mailImp{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+
+}
+.mailIcon{
+
+    position: absolute;
+    font-size: 20px;
+    top: 0
+}
+.nachricht a{
+
+    position: absolute;
+    top: 47%;
+    color: white;
+    text-decoration: none;
+}
+.insta{
+
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    left: 25%;
+}
+.twitter{
+
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+}
+.linked{
+
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    left: 75%;
+}
+                              /*Menu*/
 .menu{
 
     position: fixed;
-    width: 6em;
-    height: 6em;
-    right: 2em;
-    top: 1em;
+    width: 60px;
+    height: 50px;
+    right: 3.7%;
+    top: 6%;
     transition: 0.2s;
     cursor: pointer;
 
 }
-.menu:hover{
-
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 4.5em;
-    height: 4.5em;
-    top: 2em;
-    right: 3em;
-}
-.menuChange:hover{
-
-    border: 1px solid black;
-    
-}
 .strich1{
 
     position: fixed;
-    background: white;
-    width: 30px;
-    height: 1px;
-    top: 4.2em;
-    right: 4em;
-    transition: 0.5s;
-}
-.strich1Change{
-
     background: black;
-}
-.strich2{
-
-    position: fixed;
-    background: white;
-    width: 45px;
+    width: 30px;
     height: 1.5px;
     top: 4.5em;
     right: 4em;
     transition: 0.5s;
 }
+.strich1Change{
+
+    background: white;
+}
+.strich1Change2{
+
+    background: black;
+}
+.strich1Change3{
+
+    background: white;
+}
+.strich1Hover{
+
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+.strich2{
+
+    position: fixed;
+    background-color: black;
+    width: 30px;
+    height: 1.5px;
+    top: 4.2em;
+    right: 5em;
+    transition: 0.5s;
+
+}
 .strich2Change{
 
+    background: white;
+}
+.strich2Change2{
+
+    background: black;
+}
+.strich2Change3{
+
+    background: white;
+}
+.strich2Hover{
+
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+.strich1Ani{
+
+    transform: rotate(45deg);
+    top: 4.3em;
+    right: 4.35em;
+    height: 1.5px;
+    background: black;
+}
+.strich2Ani{
+
+    transform: rotate(135deg);
+    width: 30px;
+    top: 4.3em;
+    right: 4.35em;
+    height: 1.5px;
     background: black;
 }
 .menuAni{
@@ -165,7 +1668,7 @@ body{
     width: 50%;
     height: 0%;
     background: black;
-    transition: 1s;
+    transition: 0.8s;
     top: -100%;
     left: 0;
 }
@@ -179,7 +1682,7 @@ body{
     width: 50%;
     height: 0%;
     background: linear-gradient(225deg, #00FFF0, #00fc4c ,#00fc15);
-    transition: 1s;
+    transition: 0.8s;
     right: 0;
     bottom: -100%;
 }
@@ -189,21 +1692,7 @@ body{
   
     
 }
-.strich1Ani{
 
-    transform: rotate(45deg);
-    top: 4.3em;
-    right: 4.35em;
-    height: 1.5px;
-}
-.strich2Ani{
-
-    transform: rotate(135deg);
-    width: 30px;
-    top: 4.3em;
-    right: 4.35em;
-    height: 1.5px;
-}
 .menuItems{
 
     position:absolute;
@@ -445,260 +1934,83 @@ body{
     color: black;
     font-size: 30px;
 }
-.loader{
-
-    position: fixed;
-    background: white;
-    width: 100%;
-    height: 100%;
-}
-.logoLoader{
+                              /*Logo*/
+.logo{
 
     position: absolute;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-}
-.logo img{
-
-    position: absolute;
-    top: 4.7%;
-    left: 5.8%;
-    width: 130px;
-
+    top: 6.8%;
+    left: 7.5%;
+    font-size: 35px;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
     
 
+}
+.logoIn{
+
+    position: absolute;
+    top: 57%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
     
 
 }
 .logo2{
 
     position: absolute;
-    top: 6.5%;
-    left: 11.8%;
+    top: 6.2%;
+    left: 12%;
     font-family: 'Poiret One', cursive;
     font-size: 35px;
     transition: 1s;
+    color: black;
+}
+.logoIn2{
+
+    position: absolute;
+    top: 57%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    transition: 1s;
+    color: black;
 }
 .logoBild img{
 
     position: fixed;
-    width: 70px;
+    width: 65px;
     top: 5%;
-    left: 2.5%;
+    left: 3%;
 }
-.monitor img{
-
-    position: absolute;
-    width: 1200px;
-    height: 400px;
-    top: 20%;
-    right: -15%;
-    transform: rotate3d(0, 4, 1, 60deg);
-
-
-
-
-}
-.spruch{
-
-    position: absolute;
-    font-size: 60px;
-    font-family:'Comfortaa', cursive;
-    top: 5em;
-    left: 2.5em;
-    
-}
-.spruch2{
-
-    position: absolute;
-    font-size: 60px;
-    font-family: 'Comfortaa', cursive;
-    top: 6.3em;
-    left: 3.5em;
-}
-.wunsch{
-
-    position: absolute;
-    font-size: 60px;
-    font-family:'Comfortaa', cursive;
-    top: 6.3em;
-    left: 9.6em;
-    background: -webkit-linear-gradient(#00fff0, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-.spruchOben{
-
-    position: absolute;
-    font-size: 20px;
-    font-family:'Comfortaa', cursive;
-    top: 13em;
-    left: 7.7em;
-    background: -webkit-linear-gradient(#00fff0, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-.erstellen a{
-
-    position: absolute;
-    width: 220px;
-    height: 40px;
-    background:-webkit-linear-gradient(transparent 50%, #00FFF0 50%);
-    background-size:200px 160px;
-    border-bottom: 1px solid #00FFF0;
-    top: 62%;
-    left: 20%;
-    font-size: 20px;
-    text-align: center;
-    line-height: 2;
-    color: white;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.erstellen a:hover{
-
-    color: black;
-    background-position: 0 -80px;
-}
-.white{
-
-    position: absolute;
-    width: 80%;
-    height: 50%;
-    background: linear-gradient(#00fff0, #00fc15);
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -50%);
-
-
-}
-.important{
+                              /*LogoLoader*/
+.loader{
 
     position: fixed;
-    width: 55px;
-    height: 55px;
-    background: linear-gradient(#00fff0, #00fc15);
-    border-radius: 50%;
-    bottom: 10%;
-    right: 0;
-    transition: 0.5s;
-}
-.importantAni{
-
-    width: 230px;
-    height: 180px;
-    border-radius: 10px;
-    
-}
-.mail{
-
-    position: absolute;
-    font-size: 25px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s
-}
-.mailAni{
-
-    display: none;
-}
-.importantText{
-
-    position: absolute;
-    width: 200px;
-    height: 160px;
-    display: none;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-family:'Comfortaa', cursive;
-}
-.importantTextAni{
-
-    display: block
-}
-.telefonImp{
-
-    position: absolute;
-    top: 24%;
-    left: 17%;
-    font-weight: bold;
-
-}
-.telIcon{
-
-    position: absolute;
-    font-size: 20px;
-    top: 22%;
-}
-.mailImp{
-
-    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
     top: 0;
-    right: 0;
-    font-weight: bold;
-
 }
-.mailIcon{
+.logoLoader img{
 
     position: absolute;
-    font-size: 20px;
-    top: 0
-}
-.nachricht a{
-
-    position: absolute;
-    top: 47%;
-    color: white;
-    text-decoration: none;
-}
-.insta{
-
-    position: absolute;
-    font-size: 22px;
-    bottom: 0;
-    left: 25%;
-}
-.twitter{
-
-    position: absolute;
-    font-size: 22px;
-    bottom: 0;
+    width: 150px;
+    top: 43%;
     left: 50%;
-}
-.linked{
-
-    position: absolute;
-    font-size: 22px;
-    bottom: 0;
-    left: 75%;
-}
-.mac img{
-
-    position: absolute;
-    width: 800px;
-    height: 500px;
-    left: 50%;
-    top: 200%;
     transform: translate(-50%, -50%);
-    transition: 2s;
-
-
+    font-family: 'Montserrat', sans-serif;
 }
-.iphone img{
-
-    position: absolute;
-    left: 50%;
-    top: 305%;
-    transform: translate(-50%, -50%);
-    width: 130px;
 
 
-}
+
 @media only screen and (max-width:500px){
+
+
+
 
     .monitor img{
 
