@@ -136,3 +136,10 @@ $(".anfordern3 a").hover(function(){
 $(".anfordern3 a").click(function(){
     (".lol").fadeToggle()
 })
+
+
+window.onload = function() {
+    setTimeout(function() {
+      document.getElementById('sende').click();
+    }, 1000);
+  };
