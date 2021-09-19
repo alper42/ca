@@ -40,8 +40,8 @@ body{
 .entwickeln{
 
     position: absolute;
-    font-size: 80px;
-    width: 1400px;
+    font-size: 70px;
+    width: 1250px;
     text-align: center;
     top: 20%;
     left: 50%;
@@ -54,33 +54,36 @@ body{
 .whiteBox{
 
     position: absolute;
-    width: 280px;
+    width: 240px;
     height: 100px;
     background: white;
-    left: 44%;
-    top: 13%;
+    left: 60%;
+    top: 25%;
+    transform: translate(-50%, -50%);
 }
 .traume{
 
     position: absolute;
     width: 280px;
     height: 100px;
-    left: 43.3%;
-    top: 4.5%;
+    left: 59%;
+    top: -13%;
+    transform: translate(-50%, -50%);
     color: black;
     font-family:  'Allison', cursive;
-    font-size: 160px;
+    font-size: 140px;
 
 
 }
 .punkt{
 
     position: absolute;
-    top: 10%;
-    right: 20%;
+    top: 57%;
+    right: 0;
     width: 20px;
     height: 20px;
     background: greenyellow;
+    border-radius: 50%;
 }
 .box{
 
