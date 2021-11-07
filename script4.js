@@ -44,7 +44,7 @@ $(".menuItems li a").hover(function(){
 
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 900) {
+    if ($(this).scrollTop() > 1250) {
        $(".strich1").addClass("strich1Change");
     } else {
        $(".strich1").removeClass("strich1Change");
@@ -52,45 +52,13 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 900) {
+    if ($(this).scrollTop() > 1250) {
        $(".strich2").addClass("strich2Change");
     } else {
        $(".strich2").removeClass("strich2Change");
     }
 });
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 2750) {
-       $(".strich1").addClass("strich1Change2");
-    } else {
-       $(".strich1").removeClass("strich1Change2");
-    }
-});
-
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 2750) {
-       $(".strich2").addClass("strich2Change2");
-    } else {
-       $(".strich2").removeClass("strich2Change2");
-    }
-});
-
-
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 4050) {
-       $(".strich1").addClass("strich1Change3");
-    } else {
-       $(".strich1").removeClass("strich1Change3");
-    }
-});
-
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 4050) {
-       $(".strich2").addClass("strich2Change3");
-    } else {
-       $(".strich2").removeClass("strich2Change3");
-    }
-});
 
 $(window).scroll(function(){
     if ($(this).scrollTop() > 900) {
@@ -138,8 +106,13 @@ $(".anfordern3 a").click(function(){
 })
 
 
-window.onload = function() {
-    setTimeout(function() {
-      document.getElementById('sende').click();
-    }, 1000);
-  };
+
+
+
+$(".senden").click(function(){
+
+    setTimeout(function(){
+        $(".hallo").fadeToggle();
+    },2500)
+
+})

@@ -146,14 +146,25 @@ body{
     height: 100%;
     background: linear-gradient(90deg, #ffffff, #00ffee5d);
 }
+.mouseAll{
+
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 50px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+
+}
 .mouseStrich{
 
     position: absolute;
     width: 1px;
     height: 130px;
     background: #ffffff;
-    top: 66%;
-    left: 4.8%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
 }
 .mouseStrichAni{
@@ -161,9 +172,9 @@ body{
     position: absolute;
     width: 100%;
     height: 450%;
-    background: #d4d4d4;
+    background: #bebebe;
     animation: mouseFrame 2.3s ease-out infinite;
-
+    
 }
 @keyframes mouseFrame{
 
@@ -176,13 +187,38 @@ body{
         
     }
 }
-.mouse img{
+.mouse{
 
     position: absolute;
-    width: 27px;
-    color: gray;
-    top: 87%;
-    left: 4%;
+    width: 20px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #bebebe;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouseAni{
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 6px;
+    background: linear-gradient(87deg, #00fff0, #00fca8, #00fc15);
+    border-radius: 50px;
+}
+.mouseScroll{
+
+    position: absolute;
+    width: 100px;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #aaaaaa;
+    font-size: 14px;
+    text-align: center;
 }
 .web img{
 
@@ -1995,16 +2031,95 @@ body{
     height: 100%;
     top: 0;
 }
+.whiteLoader{
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    overflow: hidden;
+}
+.greenLoader{
+
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(225deg, #00fff0, #00fc93, #00fc15);
+    animation: kol 3s ease-in;
+
+}
+@keyframes kol{
+
+    0%{
+        top: -100%;
+    }
+    50%{
+        top: 200%;
+    }
+    100%{
+        top: -100%;
+    }
+}
+.whiteLoaderMiddle{
+
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
 .logoLoader img{
 
     position: absolute;
     width: 150px;
-    top: 43%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Montserrat', sans-serif;
 }
+.logoInLoader{
 
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: black;
+    width: 130px;
+    height: 30px;
+    
+}
+.logoIn{
+
+    position: absolute;
+    top: 120%;
+    left: 0;
+    font-size: 35px;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
+    
+
+}
+.logoIn2{
+
+    position: absolute;
+    top: 110%;
+    right: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    transition: 1s;
+    color: black;
+}
 
 
 @media only screen and (max-width:500px){

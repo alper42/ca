@@ -15,7 +15,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Chrome",
-            "url": "file:///C:/Users/Alper/Documents/GitHub/ca/contact.html",
+            "url": "file:///C:/Users/Alper/Documents/GitHub/ca/about.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

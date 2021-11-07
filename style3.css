@@ -1,0 +1,1554 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    overflow-x: hidden; 
+    cursor: context-menu;
+    background: white;
+    color: black;
+    font-family:'Comfortaa', cursive;
+    transition: 0.5s;
+    /*font-family: 'Megrim', cursive;*/
+    /* font-family: 'Urbanist', sans-serif;*/
+}
+::-webkit-scrollbar{
+
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    
+    border-radius: 50px;
+    background: linear-gradient(#00fff0, #00fcb0, #00fc15);
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    
+    background: linear-gradient(#00968c, #008f64, #008a0b);
+
+    
+}
+.x-scroll-disabled {
+	overflow-x: hidden;
+}
+
+.about{
+
+    position: absolute;
+    font-size: 150px;
+    left: 10%;
+    top: 25%;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    width: 645px;
+}
+.punkt{
+
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    bottom: 20%;
+    right: 0;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+.plus img{
+
+    position: absolute;
+    width: 300px;
+    left: 10%;
+    top: 50%;
+}
+.bildDiv{
+
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    right: 10%;
+    top: 20%;
+    background: none;
+    overflow: hidden;
+
+}
+.bild img{
+
+    position: absolute;
+    width: 750px;
+    left: -20%;
+    top: -2%;
+    filter: blur(1.2px);
+   
+}
+.whiteShadow{
+
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: -40%;
+    left: -20%;
+    opacity: 0.2;
+    background: white;
+    transform: rotate(45deg);
+
+}
+.arrow img{
+
+    position: absolute;
+    top: -20%;
+    right: -110%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    
+}
+.hover{
+
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    width: 200px;
+    height: 100px;
+    top: 70%;
+    left: 45%;
+    transform: rotate(325deg);
+    background: -webkit-linear-gradient(200deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.uberText{
+
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    font-size: 18px;
+    width: 500px;
+    font-weight: bold;
+
+   
+}
+.grauKasten{
+
+    position: absolute;
+    width: 100%;
+    height: 255%;
+    background: rgb(245, 245, 245);
+    top: 100%;
+    transition: 0.51s;
+  
+}
+.grauKastenAni{
+
+  
+   background: black;
+  
+}
+.wasIstDiv1{
+
+    position: absolute;
+    width: 900px;
+    height: 250px;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    
+}
+.wasIstDiv{
+
+    position: absolute;
+    width: 530px;
+    height: 70px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    
+}
+.wasIst{
+
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Urbanist', sans-serif;
+    bottom: 0;
+    width: 180px;
+}
+.ist{
+
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Assistant', sans-serif;
+    bottom: 0;
+    right: 0;
+}
+.wasIstLogo{
+
+    position: absolute;
+    font-size: 60px;
+    right: 0;
+    bottom: 0;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wasIstText{
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    font-size: 18px;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    color: rgb(126, 126, 126);
+}
+.fahigkeiten{
+
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    border-radius: 50px;
+    top: 190%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+}
+.leidenschaft{
+
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background: none;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.leidenschaftIcon{
+
+    position: absolute;
+    font-size: 80px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+}
+.leidenschaftUber{
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+.leidenschaftText{
+
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    line-height: 1.4;
+}
+.qualität{
+
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+.qualitätIcon{
+
+    position: absolute;
+    font-size: 80px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.qualitätUber{
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+.qualitätText{
+
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    line-height: 1.4;
+}
+.zeitgemäß{
+
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    background: none;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background:none;
+}
+.zeitgemäßIcon{
+
+    position: absolute;
+    font-size: 80px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    
+
+}
+.zeitgemäßUber{
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+.zeitgemäßText{
+
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    line-height: 1.4;
+}
+.slogan{
+
+    position: absolute;
+    top: 240%;
+    left: 10%;
+    font-size: 160px;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+}
+.sloganStrich{
+
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 266%;
+    left: 10%;
+}
+.sloganStrich2{
+
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 267%;
+    left: 10%;
+    transform: rotate(-0.8deg);
+}
+.sloganDiv{
+
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    background: white;
+    border-radius: 50px;
+    top: 310%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(219, 219, 219)
+}
+.quantitätSlogan{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 100px;
+    letter-spacing: -6px;
+    font-weight: bold;
+    transition: 0.5s;
+  
+}
+.quantitätSloganAni{
+
+    top: 20%;
+    font-size: 70px;
+    color: rgb(221, 221, 221);
+    
+}
+.quantitätSloganStrich{
+
+    position: absolute;
+    top: 50%;
+    width: 0%;
+    height: 8px;
+    border-radius: 50px;
+    background:  rgb(221, 221, 221);
+    transition: 0.5s;
+   
+}
+.quantitätSloganStrichAni{
+
+    width: 100%;
+}
+.qualitätSlogan{
+
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: bold;
+    letter-spacing: -6px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+    opacity: 0;
+  
+}
+.qualitätSloganAni{
+
+    top: 60%;
+    opacity: 1;
+}
+.slider{
+
+    position: absolute;
+    width: 80%;
+    height: 700px;
+    left: 50%;
+    top: 3150px;
+    transform: translate(-50%, -50%);
+    background: none;
+   
+}
+.slider li{
+
+    width: 80%;
+    height: 700px;
+   
+
+
+}
+.profil1{
+
+    position: absolute;
+    padding-left: 0;
+    width: 1225px;
+    height: 700px;
+    background: none;
+
+}
+.profil2{
+
+    position: absolute;
+    padding-left: 0px;
+    width: 1225px;
+    height: 700px;
+    background: none;
+
+}
+.profil3{
+
+    position: absolute;
+    padding-left: 0px;
+    width: 1225px;
+    height: 700px;
+    background: none;
+
+}
+.bild1 img{
+
+    position: absolute;
+    width: 400px;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+}
+.greenProfile{
+
+    position: absolute;
+    width: 24%;
+    height: 110%;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    right: 11%;
+    top: 390%;
+    transform: translate(0%, -50%);
+}
+.name1{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Urbanist', sans-serif;
+}
+.name2{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Urbanist', sans-serif;
+    padding-left: 2000px;
+}
+.nameStrich{
+
+    position: absolute;
+    width: 70px;
+    height: 1.5px;
+    top: 30%;
+    background: black;
+}
+.position1{
+
+    position: absolute;
+    top: 11%;
+    left: 0;
+    font-size: 20px;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.plusProfil img{
+
+    position: absolute;
+    width: 300px;
+    left: 40%;
+    top: 0;
+}
+.textProfil1{
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    color: white;
+    width: 750px;
+}
+
+.slick-dots{
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+.slick-dots li{
+
+   padding-right: 0px;
+
+}
+.slick-dots li button{
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #fc0000;
+    text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 70px;
+}
+.prev{
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #00fca8;
+    top: 440%;
+    left: 40%;
+}
+.strich1prev{
+
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    
+    background: rgb(0, 128, 255);
+}
+.next{
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid #00fca8;
+    top: 440%;
+    left: 48%;
+}
+.action{
+
+    position: absolute;
+    top: 360%;
+    width: 100%;
+    height: 100%;
+}
+.action a{
+    color: red;
+
+}
+.mitBack{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 19, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    top: -100%;
+    transition: 0.5s;
+}
+.mitBackAni{
+
+    top: 0;
+}
+.mit1{
+
+    position: absolute;
+    padding: 30px;
+    width: 50px;
+    height: 100px;
+    background-color: yellow;
+    top: 10%;
+    left: 10%;
+
+}
+.mit2{
+
+    position: absolute;
+    padding: 30px;
+    width: 50px;
+    height: 100px;
+    background-color: rgb(0, 255, 179);
+    top: 10%;
+    left: 30%;
+    
+}
+.mit3{
+
+    position: absolute;
+    padding: 30px;
+    width: 50px;
+    height: 100px;
+    background-color: rgb(0, 81, 255);
+    top: 10%;
+    left: 50%;
+    
+}
+.mitarbeiter{
+
+    position: absolute;
+    top: 440%;
+    left: 10%;
+    width: 300px;
+    background: red;
+
+}
+
+                            /*Project Box*/
+.seiteErstellenBox{
+
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 500%;
+    text-align: center;
+    color: white;
+}
+.schleife2 img{
+
+    position: absolute;
+    width: 1000px;
+    left: 40%;
+    top: -2px;
+}
+.anfordern1{
+
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    font-family: 'Work Sans', sans-serif;
+}
+.anfordern2{
+
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+.anfordern3 a{
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.anfordernStrich{
+
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    background: rgb(226, 226, 226);
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.anfordernStrichZ{
+
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+.anfordernStrichZAni{
+
+    width: 240px;
+}
+                              /*Footer*/
+.footer{
+
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: black;
+    top: 500%;
+}
+.footerResp{
+
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    background: black;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: rgb(112, 112, 112);
+}
+.footerMuc img{
+
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 50px 50px 50px 
+}
+.footerLogo img{
+
+    position: absolute;
+    width: 60px;
+
+    
+}
+.footerLogo1{
+
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    font-size: 28px;
+    font-family: 'Aclonica', sans-serif;
+    color: #ffffff;
+
+}
+.footerLogo2{
+
+    position: absolute;
+    top: 6px;
+    left: 122px;
+    font-family: 'Poiret One', cursive;
+    font-size: 28px;
+    transition: 1s;
+    color: #ffffff;
+}
+.textCali{
+
+    position: absolute;
+    width: 240px;
+    top: 80px;
+    left: 5px;
+    line-height: 1.4;
+}
+.footerKontakt{
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+}
+.footerTel{
+
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+}
+.telIconFooter{
+
+    position: absolute;
+    top: 29.5%;
+    left: 33%;
+    transition: 1s;
+
+}
+.telIconFooter:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.footerMail{
+
+    position: absolute;
+    top: 43%;
+    left: 35%;
+}
+
+.mailIconFooter{
+
+    position: absolute;
+    top: 43%;
+    left: 33%;
+
+}
+.mailIconFooter:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.footerAdress{
+
+    position: absolute;
+    top: 28%;
+    right: 30%;
+    width: 200px;
+    line-height: 1.7;
+}
+.footerInsta{
+
+    position: absolute;
+    right: 10%;
+    font-size: 25px;
+    top: 5%;
+    color: #ffffff;
+}
+.footerInsta:hover{
+
+    background: -webkit-linear-gradient(250deg, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.footerLinkedIn{
+
+    position: absolute;
+    right: 5%;
+    font-size: 25px;
+    top: 3.5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background: none;
+    text-align: center;
+    line-height: 1.4444;
+    color: #ffffff;
+}
+.footerLinkedIn:hover{
+
+    background: #005481;
+    
+}
+.footerTwitter{
+
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    top: 5%;
+    color: #ffffff;
+}
+.footerTwitter:hover{
+
+    background:  #1DA1F2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.impressum{
+
+    position: absolute;
+    top: 30%;
+    right: 0;
+    font-size: 13px;
+}
+.impressum:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.datenschutz{
+
+    position: absolute;
+    top: 40%;
+    right: 0;
+    font-size: 13px;
+}
+.datenschutz:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.agb{
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 13px;
+
+}
+.agb:hover{
+
+    background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copyright{
+
+    position: absolute;
+    top: 70%;
+    right: 0;
+    font-size: 15px;
+
+}
+.copyrightJ{
+
+    position: absolute;
+    top: 69.5%;
+    right: 8.5%;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;;
+
+}
+.copyrightLogo{
+
+    position: absolute;
+    top: 70%;
+    right: 11.5%;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;;
+
+}
+.FooterArrowAusen{
+
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+
+}
+.FooterArrowInnen1{
+
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    width: 30px;
+    height: 1px;
+    transform: rotate(45deg);
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+.FooterArrowInnen2{
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 30px;
+    height: 1px;
+    transform: rotate(135deg);
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+}
+#oben{
+
+    position: absolute;
+    width: 1px;
+    top: 0;
+}
+                              /*Important Mail*/
+.important{
+
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(#00fff0, #00fc15);
+    border-radius: 50%;
+    bottom: 10%;
+    right: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    color: white;
+}
+.importantAni{
+
+    width: 230px;
+    height: 190px;
+    border-radius: 10px;
+    
+}
+.mail{
+
+    position: absolute;
+    font-size: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s
+}
+.mailAni{
+
+    display: none;
+}
+.importantText{
+
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Comfortaa', cursive;
+}
+.importantTextAni{
+
+    display: block
+}
+.telefonImp{
+
+    position: absolute;
+    top: 24%;
+    left: 17%;
+    font-weight: bold;
+
+}
+.telIcon{
+
+    position: absolute;
+    font-size: 20px;
+    top: 22%;
+}
+.mailImp{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+
+}
+.mailIcon{
+
+    position: absolute;
+    font-size: 20px;
+    top: 0
+}
+.nachricht a{
+
+    position: absolute;
+    top: 47%;
+    color: white;
+    text-decoration: none;
+}
+.instaImpo{
+
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    left: 25%;
+}
+.twitterImpo{
+
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+}
+.linkedImpo{
+
+    position: absolute;
+    font-size: 22px;
+    bottom: 0;
+    left: 75%;
+}
+                              /*Menu*/
+.menu{
+
+    position: fixed;
+    width: 60px;
+    height: 50px;
+    right: 3.7%;
+    top: 6%;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.strich1{
+
+    position: fixed;
+    background: black;
+    width: 30px;
+    height: 1.5px;
+    top: 4.5em;
+    right: 4em;
+    transition: 0.5s;
+    
+}
+.strich1Change{
+
+    background: white;
+}
+.strich1Hover{
+
+    right: 4.25em;
+}
+.strich2{
+
+    position: fixed;
+    background-color: black;
+    width: 30px;
+    height: 1.5px;
+    top: 4.2em;
+    right: 5em;
+    transition: 0.5s;
+
+}
+.strich2Change{
+
+    background: white;
+}
+.strich2Hover{
+
+    right: 4.25em;
+}
+.strich1Ani{
+
+    transform: rotate(45deg);
+    top: 4.3em;
+    right: 4.35em;
+    height: 1.5px;
+    background: black;
+}
+.strich2Ani{
+
+    transform: rotate(135deg);
+    width: 30px;
+    top: 4.3em;
+    right: 4.35em;
+    height: 1.5px;
+    background: black;
+}
+.menuAni{
+
+    position: fixed;
+    width: 50%;
+    height: 0%;
+    background: black;
+    transition: 0.8s;
+    top: -100%;
+    left: 0;
+}
+.menuAniG{
+
+    height: 200%;
+}
+.menuAni2{
+
+    position: fixed;
+    width: 50%;
+    height: 0%;
+    background: linear-gradient(225deg, #00FFF0, #00fc4c ,#00fc15);
+    transition: 0.8s;
+    right: 0;
+    bottom: -100%;
+}
+.menuAni2G{
+
+    height: 200%;
+  
+    
+}
+
+.menuItems{
+
+    position:absolute;
+    width: 50%;
+    height: 80%;
+    font-size: 35px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 105%;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold ;
+    
+}
+.menuItems li{
+
+    padding: 20px;
+    
+}
+.menuItems li a{
+
+    text-decoration: none;
+    color: white;
+    
+}
+.menuItems li a:hover{
+
+    background: -webkit-linear-gradient(225deg, #00fff0, #00fca8, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.start a{
+
+    background: -webkit-linear-gradient(225deg, #00fff0, #00ebfc, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.img1 img{
+
+    position: absolute;
+    width: 500px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    opacity: 0;
+    
+}
+.img1Ani img{
+
+
+    opacity: 1;
+    top: 20%;
+}
+.img2 img{
+
+    position: absolute;
+    width: 500px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    opacity: 0;
+    
+}
+.img2Ani img{
+
+
+    opacity: 1;
+    top: 20%;
+}
+.img3 img{
+
+    position: absolute;
+    width: 500px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    opacity: 0;
+    
+}
+.img3Ani img{
+
+
+    opacity: 1;
+    top: 20%;
+}
+.img4 img{
+
+    position: absolute;
+    width: 600px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    opacity: 0;
+    
+}
+.img4Ani img{
+
+
+    opacity: 1;
+    top: 20%;
+}
+.menuMiddle1{
+
+    position: absolute;
+    top: 53%;
+    right: 0;
+    font-size: 40px;
+    background: -webkit-linear-gradient(225deg, #00fff0, #00fc93, #00fc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.menuMiddle2{
+
+    position: absolute;
+    top: 3%;
+    left: 0;
+    font-size: 40px;
+    color: black;
+
+}
+.menuInner{
+
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: 0.5s;
+}
+.menuInnerAni{
+
+    opacity: 0;
+}
+.deko1{
+
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 2px;
+    background: black;
+}
+.deko2{
+
+    position: absolute;
+    top: 44.6%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 1.5px;
+    background: black;
+    transform: rotate(178deg);
+}
+.interesse{
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 40px;
+    width: 400px;
+
+
+}
+.schreiben{
+
+    position: absolute;
+    top: 40%;
+    left: 57.5%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 27px;
+    width: 600px
+
+
+}
+.telIcon2{
+
+    position: absolute;
+    top: 54.5%;
+    left: 16%;
+    color: black;
+    font-size: 20px;
+}
+.telefonImp2{
+
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    color: black;
+    font-weight: bold;
+}
+.mailImp2{
+
+    position: absolute;
+    top: 55%;
+    right: 17%;
+    color: black;
+    font-weight: bold;
+}
+.mailIcon2{
+
+    position: absolute;
+    top: 54.7%;
+    right: 43%;
+    color: black;
+    font-size: 20px;
+}
+.insta2{
+
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    color: black;
+    font-size: 30px;
+}
+.twitter2{
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: black;
+    font-size: 30px;
+}
+.linked2{
+
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    color: black;
+    font-size: 30px;
+}
+                              /*Logo*/
+.logo{
+
+    position: absolute;
+    top: 6.8%;
+    left: 7.5%;
+    font-size: 35px;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
+    
+
+}
+
+.logo2{
+
+    position: absolute;
+    top: 6.2%;
+    left: 12%;
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    transition: 1s;
+    color: black;
+}
+
+.logoBild img{
+
+    position: fixed;
+    width: 65px;
+    top: 5%;
+    left: 3%;
+}
+                              /*LogoLoader*/
+.loader{
+
+    position: fixed;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.logoLoader img{
+
+    position: absolute;
+    width: 150px;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+.logoIn{
+
+    position: absolute;
+    top: 57.4%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: black;
+    font-family: 'Aclonica', sans-serif;
+    
+
+}
+.logoIn2{
+
+    position: absolute;
+    top: 57%;
+    left: 52.7%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    transition: 1s;
+    color: black;
+}
