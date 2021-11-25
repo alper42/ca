@@ -175,7 +175,7 @@ body{
     background: rgb(235, 235, 235);
     color: rgb(119, 119, 119);
 }
-.nachricht{
+.ihreNachricht{
 
     position: absolute;
     top: 40%;
@@ -250,7 +250,7 @@ body{
     text-align: center;
     transform: translate(-50%, -50%);
 }
-.tel{
+.tele{
 
     position: absolute;
     top: 115%;
@@ -745,7 +745,7 @@ body{
     font-family: 'Open Sans', sans-serif;;
 
 }
-.FooterArrowAusen{
+.FooterArrow{
 
     position: absolute;
     bottom: 3%;
@@ -755,7 +755,24 @@ body{
     height: 50px;
     border-radius: 50%;
     background: none;
+    transition: 0.2s;
+   
+}
+.FooterArrowAusen{
 
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+   
+}
+.FooterArrowAni{
+
+    bottom: 6%;
+   
 }
 .FooterArrowInnen1{
 
@@ -777,6 +794,29 @@ body{
     transform: rotate(135deg);
     background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
 }
+.FooterArrowInnen3{
+
+    position: absolute;
+    height: 0px;
+    width: 1px;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 33%;
+    left: 51.2%;
+    transition: 0.3s;
+    transform: rotate(180deg);
+
+}
+.FooterArrowInnen3Ani{
+
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 30%;
+    left: 51.2%;
+    
+
+}
 #oben{
 
     position: absolute;
@@ -787,12 +827,12 @@ body{
 .important{
 
     position: fixed;
-    width: 55px;
-    height: 55px;
-    background: linear-gradient(#00fff0, #00fc15);
-    border-radius: 50%;
-    bottom: 10%;
-    right: 0;
+    width: 100px;
+    height: 60px;
+    background: #00fca8;
+    border-radius: 50px;
+    bottom: 5%;
+    right: 1.5%;
     transition: 0.5s;
     overflow: hidden;
     color: white;
@@ -801,19 +841,47 @@ body{
 
     width: 230px;
     height: 190px;
-    border-radius: 10px;
+    border-radius: 25px;
     
 }
+
 .mail{
 
     position: absolute;
-    font-size: 25px;
-    left: 50%;
+    font-size: 22px;
+    left: 25%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s
 }
 .mailAni{
+
+    display: none;
+}
+.strichImportant{
+
+    position: absolute;
+    width: 1.5px;
+    height: 30px;
+    background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.strichImportantAni{
+
+    display: none;
+}
+.tel{
+
+    position: absolute;
+    font-size: 18px;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s
+}
+.telAni{
 
     display: none;
 }
@@ -838,7 +906,18 @@ body{
     top: 24%;
     left: 17%;
     font-weight: bold;
+    animation: tel 0.4s ease-in;
+}
+@keyframes tel{
 
+    0%{
+        opacity: 0;
+        top: 40%;
+    }
+    100%{
+        opacity: 1;
+        top: 24%;
+    }
 }
 .telIcon{
 
@@ -852,7 +931,18 @@ body{
     top: 0;
     right: 0;
     font-weight: bold;
+    animation: mail 0.4s ease-in;
+}
+@keyframes mail{
 
+    0%{
+        opacity: 0;
+        top: 15%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
 }
 .mailIcon{
 
@@ -866,6 +956,12 @@ body{
     top: 47%;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.1s;
+}
+.nachricht a:hover{
+
+    color: rgb(235, 235, 235);
 }
 .instaImpo{
 
@@ -874,6 +970,13 @@ body{
     bottom: 0;
     left: 25%;
 }
+.instaImpo:hover{
+
+    background: -webkit-linear-gradient(250deg, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 .twitterImpo{
 
     position: absolute;
@@ -881,12 +984,46 @@ body{
     bottom: 0;
     left: 50%;
 }
+.twitterImpo:hover{
+
+    background:  #1DA1F2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
 .linkedImpo{
 
     position: absolute;
     font-size: 22px;
     bottom: 0;
     left: 75%;
+    width: 27px;
+    height: 27px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 5px;
+}
+.linkedImpo:hover{
+
+    background: #005481;
+    
+}
+.importantOver{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    top: 0%;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.importantOverAni{
+
+    opacity: 1;
+    top: 0;
+    visibility: visible;
 }
                               /*Menu*/
 .menu{
@@ -909,6 +1046,7 @@ body{
     top: 4.5em;
     right: 4em;
     transition: 0.5s;
+    
 }
 .strich1Change{
 
@@ -953,6 +1091,18 @@ body{
     right: 4.35em;
     height: 1.5px;
     background: black;
+}
+.strichBack{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255, 0.5);
+    top: 3%;
+    right: 7.7%;
+    border-radius: 15px;
+    
+
 }
 .menuAni{
 

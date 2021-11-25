@@ -142,7 +142,7 @@ body{
 .bgcolor{
     
     position: absolute;
-    width: 110%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(90deg, #ffffff, #00ffee5d);
 }
@@ -379,8 +379,8 @@ body{
 .kreisW{
 
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    height: 60%;
     border-radius: 50%;
     background: white;
     left: 50%;
@@ -391,8 +391,8 @@ body{
 }
 .kreisWAni{
 
-    width: 2000px;
-    height: 2000px;
+    width: 130%;
+    height: 270%;
 }
 .weg{
 
@@ -1474,7 +1474,7 @@ body{
     font-family: 'Open Sans', sans-serif;;
 
 }
-.FooterArrowAusen{
+.FooterArrow{
 
     position: absolute;
     bottom: 3%;
@@ -1484,7 +1484,24 @@ body{
     height: 50px;
     border-radius: 50%;
     background: none;
+    transition: 0.2s;
+   
+}
+.FooterArrowAusen{
 
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: none;
+   
+}
+.FooterArrowAni{
+
+    bottom: 6%;
+   
 }
 .FooterArrowInnen1{
 
@@ -1506,6 +1523,29 @@ body{
     transform: rotate(135deg);
     background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
 }
+.FooterArrowInnen3{
+
+    position: absolute;
+    height: 0px;
+    width: 1px;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 33%;
+    left: 51.2%;
+    transition: 0.3s;
+    transform: rotate(180deg);
+
+}
+.FooterArrowInnen3Ani{
+
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    top: 30%;
+    left: 51.2%;
+    
+
+}
 #oben{
 
     position: absolute;
@@ -1516,32 +1556,61 @@ body{
 .important{
 
     position: fixed;
-    width: 55px;
-    height: 55px;
-    background: linear-gradient(#00fff0, #00fc15);
-    border-radius: 50%;
-    bottom: 10%;
-    right: 0;
+    width: 100px;
+    height: 60px;
+    background: #00fca8;
+    border-radius: 50px;
+    bottom: 5%;
+    right: 1.5%;
     transition: 0.5s;
     overflow: hidden;
+    color: white;
 }
 .importantAni{
 
     width: 230px;
     height: 190px;
-    border-radius: 10px;
+    border-radius: 25px;
     
 }
+
 .mail{
 
     position: absolute;
-    font-size: 25px;
-    left: 50%;
+    font-size: 22px;
+    left: 25%;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: 0.5s
 }
 .mailAni{
+
+    display: none;
+}
+.strichImportant{
+
+    position: absolute;
+    width: 1.5px;
+    height: 30px;
+    background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.strichImportantAni{
+
+    display: none;
+}
+.tel{
+
+    position: absolute;
+    font-size: 18px;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s
+}
+.telAni{
 
     display: none;
 }
@@ -1566,7 +1635,18 @@ body{
     top: 24%;
     left: 17%;
     font-weight: bold;
+    animation: tel 0.4s ease-in;
+}
+@keyframes tel{
 
+    0%{
+        opacity: 0;
+        top: 40%;
+    }
+    100%{
+        opacity: 1;
+        top: 24%;
+    }
 }
 .telIcon{
 
@@ -1580,7 +1660,18 @@ body{
     top: 0;
     right: 0;
     font-weight: bold;
+    animation: mail 0.4s ease-in;
+}
+@keyframes mail{
 
+    0%{
+        opacity: 0;
+        top: 15%;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
 }
 .mailIcon{
 
@@ -1594,27 +1685,74 @@ body{
     top: 47%;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.1s;
 }
-.insta{
+.nachricht a:hover{
+
+    color: rgb(235, 235, 235);
+}
+.instaImpo{
 
     position: absolute;
     font-size: 22px;
     bottom: 0;
     left: 25%;
 }
-.twitter{
+.instaImpo:hover{
+
+    background: -webkit-linear-gradient(250deg, #8a3ab9, #bc2a8d, #e95950, #fbad50, #fccc63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.twitterImpo{
 
     position: absolute;
     font-size: 22px;
     bottom: 0;
     left: 50%;
 }
-.linked{
+.twitterImpo:hover{
+
+    background:  #1DA1F2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.linkedImpo{
 
     position: absolute;
     font-size: 22px;
     bottom: 0;
     left: 75%;
+    width: 27px;
+    height: 27px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 5px;
+}
+.linkedImpo:hover{
+
+    background: #005481;
+    
+}
+.importantOver{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.7);
+    top: 0%;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.importantOverAni{
+
+    opacity: 1;
+    top: 0;
+    visibility: visible;
 }
                               /*Menu*/
 .menu{
@@ -1637,22 +1775,15 @@ body{
     top: 4.5em;
     right: 4em;
     transition: 0.5s;
+    
 }
 .strich1Change{
 
     background: white;
 }
-.strich1Change2{
-
-    background: black;
-}
-.strich1Change3{
-
-    background: white;
-}
 .strich1Hover{
 
-    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    right: 4.25em;
 }
 .strich2{
 
@@ -1669,17 +1800,9 @@ body{
 
     background: white;
 }
-.strich2Change2{
-
-    background: black;
-}
-.strich2Change3{
-
-    background: white;
-}
 .strich2Hover{
 
-    background: linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+    right: 4.25em;
 }
 .strich1Ani{
 
@@ -1697,6 +1820,18 @@ body{
     right: 4.35em;
     height: 1.5px;
     background: black;
+}
+.strichBack{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255, 0.5);
+    top: 3%;
+    right: 7.7%;
+    border-radius: 15px;
+    
+
 }
 .menuAni{
 
@@ -2122,9 +2257,106 @@ body{
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:430px){
 
 
+    body{
+
+        width: 390px;
+    }
+    .schleife img{
+
+        position: absolute;
+        width: 300px;
+        left: 10%;
+        top: -10px;
+    }
+
+    .iphone img{
+
+        position: absolute;
+        width: 400px;
+        height: 500px;
+        top: -25%;
+        left: 20%;
+     
+    }
+    .iphone2 img{
+    
+        position: absolute;
+        width: 400px;
+        height: 500px;
+        top: 0;
+        left:30%;
+        
+    
+    }
+
+    .slipper{
+
+        position: absolute;
+        font-size: 20px;
+        box-sizing: border-box;
+        font-family:'Comfortaa', cursive;
+        top: 50.3%;
+        left: 33%;
+        width: 200px;
+        height: 55px;
+        text-transform: uppercase;
+        overflow: hidden;
+        background: -webkit-linear-gradient(250deg, #00fff0, #00fca8, #00fc15);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .kreisW{
+
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        background: white;
+        left: 50%;
+        top: 420%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+    
+    }
+    .kreisWAni{
+    
+        width: 100%;
+        height: 270%;
+    }
+
+    .faq{
+
+        position: absolute;
+        bottom: -11.8%;
+        left: 30%;
+        font-size: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        -webkit-box-reflect: below -115px linear-gradient(transparent, transparent, #0004);
+    }
+    .faqBorder{
+    
+        position: absolute;
+        top: 580%;
+        left: 10%;
+        width: 200px;
+        height: 200px;
+        border: 1px solid transparent;
+        border-image: linear-gradient(45deg, #00fff0, #00fc15) 1;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.075));
+        background: linear-gradient(0deg, #00fca8, #00fca880, #00fca83d, #00fca810, transparent, transparent, transparent, transparent, transparent);
+    }
+    .schleife2 img{
+
+        position: absolute;
+        width: 300px;
+        left: 0%;
+        top: -2px;
+    }
 
 
     .monitor img{
@@ -2182,7 +2414,102 @@ body{
     }
 
 
+    .slider{
 
+        background: transparent;
+        top: 3450px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 300px;
+        box-shadow: 5px 5px 20px 2px  rgb(230, 230, 230);
+        border-radius: 10px;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .sliderAni{
+
+        opacity: 1;
+    }
+    
+    .slider li{
+    
+        background-color: transparent;
+        height: 550px;
+    }
+
+    .mac img{
+
+        position: absolute;
+        width: 480px;
+        height: 250px;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 10em;
+        top: 200%;
+        display: none;
+    }
+    
+    .imac img{
+    
+       
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 60%;
+        top: 200%;
+        transform: translate(-50%, -50%);
+        display: none;
+    
+    }
+
+    .whiteLoader{
+
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        overflow: hidden;
+    }
+    .greenLoader{
+    
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(225deg, #00fff0, #00fc93, #00fc15);
+        animation: kol 3s ease-in;
+    
+    }
+    @keyframes kol{
+
+        0%{
+            top: -100%;
+        }
+        50%{
+            top: 200%;
+        }
+        100%{
+            top: -100%;
+        }
+    }
+    .whiteLoaderMiddle{
+    
+        position: absolute;
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+    }
 
 
 }

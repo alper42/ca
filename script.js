@@ -118,11 +118,25 @@ $(".important").hover(function(){
 })
 
 $(".important").hover(function(){
+    $(".tel").toggleClass("telAni")
+})
+
+$(".important").hover(function(){
+    $(".strichImportant").toggleClass("strichImportantAni")
+})
+
+$(".important").hover(function(){
     $(".importantText").toggleClass("importantTextAni")
 })
 $(".start a").hover(function(){
     $(".img1").toggleClass("img1Ani")
 })
+
+
+$(".important").hover(function(){
+    $(".importantOver").toggleClass("importantOverAni")
+})
+
 
 /*blackScroll*/
 
@@ -389,5 +403,14 @@ $(".questionsS").click(function(){
 
 $(".arrowS").click(function(){
     $(".arrowS").toggleClass("arrowSAni")
+})
+
+
+$(".FooterArrow").hover(function(){
+    $(".FooterArrowInnen3").toggleClass("FooterArrowInnen3Ani")
+})
+
+$(".FooterArrow").hover(function(){
+    $(".FooterArrow").toggleClass("FooterArrowAni")
 })
 
